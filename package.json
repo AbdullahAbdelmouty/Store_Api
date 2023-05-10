@@ -2,9 +2,9 @@
   "name": "store",
   "version": "1.0.0",
   "description": "",
-  "start": "app.js",
+  "start": "index.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
