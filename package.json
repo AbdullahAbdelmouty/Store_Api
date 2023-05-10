@@ -8,6 +8,9 @@
   },
   "keywords": [],
   "author": "",
+  "engines": {
+    "node": "v18.13.0"
+  },
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.3",
