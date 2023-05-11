@@ -8,21 +8,19 @@ const app = express();
 
 //middleware
 app.use(express.json());
-app.use("/api/v1/products",productsRouter)
+app.use("/api/v1/products", productsRouter)
 app.use(notFound);
 app.use(errorHandlerMidlleware);
 
 const port = process.env.PORT || 3000;
-const start = async ()=>{
+const start = async () => {
     //connect db
     try {
         await connectDB(process.env.MONGO_URI);
-        app.listen(port,()=>{console.log(`server listen to port ${port}`)})
+        app.listen(port, () => { console.log(`server listen to port ${port}`) })
     } catch (error) {
-        
+        console.log(error);
     }
 }
 
-start()
-
-module.exports = start;
+start();
